@@ -1,0 +1,8 @@
+17/05/19 16:50:47 INFO BlockManagerMasterEndpoint: Registering block manager 10.225.228.99:52849 with 2004.6 MB RAM, BlockManagerId(driver, 10.225.228.99, 52849, None)
+17/05/19 16:50:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.225.228.99, 52849, None)
+17/05/19 16:50:47 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.225.228.99, 52849, None)
+17/05/19 16:50:47 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 127.1 KB, free 2004.5 MB)
+17/05/19 16:50:47 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 14.3 KB, free 2004.5 MB)
+17/05/19 16:50:47 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.225.228.99:52849 (size: 14.3 KB, free: 2004.6 MB)
+17/05/19 16:50:47 INFO SparkContext: Created broadcast 0 from textFile at SImpleSpark.scala:13
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: file:/Users/fatu/dev/github/fatu/simple-spark/test.txt
