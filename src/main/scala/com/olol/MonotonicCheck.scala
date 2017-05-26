@@ -33,13 +33,11 @@ object MonotonicCheck {
 
     val sqlContext = new SQLContext(sc)
 
-    println(getClass.getResource("/test.data").getPath)
-
     val df = sqlContext.read.format("com.databricks.spark.csv")
       .option("delimiter", "\u0007")
       .option("header", "true")
       .option("inferSchema", "true")
-      .load(getClass.getResource("/test").getPath)
+      .load(args(0))
 
     val dateFieldName = "madmen_transaction_created_date";
 
